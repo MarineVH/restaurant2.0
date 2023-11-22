@@ -48,16 +48,16 @@
         <h1 class="text-warning">Formulaire de contact</h1>
         <div class="row rounded p-2 m-0">
           <div class="col-12 col-sm-12 col-md-12">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" action="connect.php" method="post" novalidate>
               <div class="row my-3">
                 <div class="col-12 col-sm-6 col-md-6 text-warning">
-                  <label for="prenom" class="form-label">Prénom</label><br>
-                  <input class="container-fluid form-control rounded border-1 border-warning bg-warning-subtle" type="text" id="prenom" name="prenom" placeholder="Ex.: John" required><br>
+                  <label for="firstName" class="form-label">Prénom</label><br>
+                  <input class="container-fluid form-control rounded border-1 border-warning bg-warning-subtle" type="text" id="firstName" name="firstName" placeholder="Ex.: John" required><br>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-6 text-warning">
-                  <label for="nom" class="form-label">Nom</label><br>
-                  <input class="container-fluid form-control rounded border-1 border-warning bg-warning-subtle" type="text" id="nom" name="nom" placeholder="Ex.: Doe" required><br>
+                  <label for="lastName" class="form-label">Nom</label><br>
+                  <input class="container-fluid form-control rounded border-1 border-warning bg-warning-subtle" type="text" id="lastName" name="lastName" placeholder="Ex.: Doe" required><br>
                 </div>
               </div>
 
@@ -70,12 +70,12 @@
 
               <div class="row my-3">
                 <div class="col-12 col-sm-12 col-md-12 text-warning">
-                  <label for="sujet" class="form-label">Sujet</label><br>
+                  <label for="subject" class="form-label">Sujet</label><br>
                   <select class="container-fluid form-select rounded border-1 border-warning bg-warning-subtle text-danger" id="subject" name="subject" required>
                     <option selected disabled value="">Choisissez votre sujet</option>
-                    <option value="option-1">Réservation</option>
-                    <option value="option-2">Annulation</option>
-                    <option value="option-3">Organisation Événement</option>
+                    <option value="reservation">Réservation</option>
+                    <option value="annulation">Annulation</option>
+                    <option value="organisation">Organisation Événement</option>
                     <option value="other">Other</option>
                   </select><br>
                 </div>
